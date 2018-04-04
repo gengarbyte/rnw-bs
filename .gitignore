@@ -1,0 +1,4 @@
+*.sh
+*.log
+node_modules
+lib/
