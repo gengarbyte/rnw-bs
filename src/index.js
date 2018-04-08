@@ -32,10 +32,10 @@ function getPrefixKey(str) {
 
 function filterRedundantKeys(arr, preferredKeys, dumpedKeys){
   let ret = [];
-  console.log('Dumped Keys >>> ')
-  console.log(dumpedKeys)
-  console.log('Preferred Keys >>> ')
-  console.log(preferredKeys)
+  // console.log('Dumped Keys >>> ')
+  // console.log(dumpedKeys)
+  // console.log('Preferred Keys >>> ')
+  // console.log(preferredKeys)
   arr.forEach((item, idx)=>{
     if(_.some(dumpedKeys, (key)=> _.includes(item, key)) ){
       //go thru loop to find if existing, 
@@ -86,8 +86,8 @@ const NativeBootStrap = {
                           ? 1
                           : 0;
 
-    console.log("Width by dim.width is >>> " + dim.width + '   ' + dim.scale);
-    console.log("Merging to breakpoint >>> " + infix[infixIdx] + '  ' + gridBreakpoints[infixIdx]);
+    // console.log("Width by dim.width is >>> " + dim.width + '   ' + dim.scale);
+    // console.log("Merging to breakpoint >>> " + infix[infixIdx] + '  ' + gridBreakpoints[infixIdx]);
 
     switch(infixIdx){
       case 0:
@@ -108,7 +108,7 @@ const NativeBootStrap = {
     ret = ret.map((item)=>{
       return NativeBootStrap.styles[item];
     })
-    console.log(ret);
+    // console.log(ret);
     return ret;
   },
 
